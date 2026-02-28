@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Phone, Code } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const navLinks = [
@@ -43,13 +43,6 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <button
-            onClick={() => navigate("/code")}
-            className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
-          >
-            <Code size={16} />
-            Code
-          </button>
           <a
             href="https://wa.me/917498487315"
             target="_blank"
@@ -79,13 +72,6 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <button
-            onClick={() => { setOpen(false); navigate("/code"); }}
-            className="flex items-center gap-1.5 px-6 py-3 text-sm text-muted-foreground hover:text-primary transition-colors"
-          >
-            <Code size={16} />
-            Code
-          </button>
           <div className="px-6 pt-2">
             <a
               href="https://wa.me/917498487315"
